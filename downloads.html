@@ -172,21 +172,33 @@
                             <h4 style="font-size: 0.9rem; color: #888; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 1.5rem;">Fast Install (For Developers)</h4>
                             <p style="font-size: 0.9rem; color: #666; margin-bottom: 1rem;">Paste this command into your <strong>Terminal</strong> to install instantly:</p>
                             
-                            <div style="position: relative; display: flex; align-items: center; background: #1a1a1a; border-radius: 12px; padding: 1.25rem;">
-                                <code id="installCommand" style="color: #00ff00; font-family: 'Courier New', monospace; font-size: 0.85rem; line-height: 1.4; word-break: break-all; margin-right: 2.5rem;">curl -sL https://speedai1sonic22-spec.github.io/SpeedAI/install.sh | bash</code>
-                                <button onclick="copyInstallCommand()" style="position: absolute; right: 10px; background: rgba(255,255,255,0.1); border: none; padding: 8px; border-radius: 8px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s;" id="copyBtn" title="Copy to clipboard">
-                                    <svg viewBox="0 0 24 24" width="18" height="18" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                            <div style="position: relative; background: #1a1a1a; border-radius: 12px; padding: 1.5rem 1.25rem; margin-top: 1.5rem;">
+                                <code id="installCommand" style="color: #00ff00; font-family: 'Courier New', monospace; font-size: 0.85rem; line-height: 1.4; word-break: break-all; display: block; padding-right: 3rem;">curl -sL https://speedai1sonic22-spec.github.io/SpeedAI/install.sh | bash</code>
+                                <button onclick="copyInstallCommand()" id="copyBtn" style="position: absolute; top: 12px; right: 12px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.1); padding: 8px; border-radius: 8px; cursor: pointer; display: flex; align-items: center; gap: 8px; transition: all 0.2s;" title="Copy to clipboard">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" id="copyIcon"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                                    <span id="copyLabel" style="color: #fff; font-size: 11px; font-weight: 500; display: none;">Copy</span>
                                 </button>
                             </div>
                             
                             <script>
                                 function copyInstallCommand() {
                                     const command = document.getElementById('installCommand').innerText;
+                                    const btn = document.getElementById('copyBtn');
+                                    const label = document.getElementById('copyLabel');
+                                    const icon = document.getElementById('copyIcon');
+                                    
                                     navigator.clipboard.writeText(command).then(() => {
-                                        const btn = document.getElementById('copyBtn');
-                                        const originalHtml = btn.innerHTML;
-                                        btn.innerHTML = '<span style="color: #00ff00; font-size: 10px; font-weight: bold;">Copied!</span>';
-                                        setTimeout(() => { btn.innerHTML = originalHtml; }, 1500);
+                                        label.innerText = 'Copied!';
+                                        label.style.display = 'inline';
+                                        label.style.color = '#00ff00';
+                                        icon.style.stroke = '#00ff00';
+                                        
+                                        setTimeout(() => { 
+                                            label.style.display = 'none';
+                                            label.innerText = 'Copy';
+                                            label.style.color = '#fff';
+                                            icon.style.stroke = '#fff';
+                                        }, 2000);
                                     });
                                 }
                             </script>
