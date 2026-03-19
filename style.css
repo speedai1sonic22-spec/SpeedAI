@@ -181,25 +181,37 @@ a:hover {
 }
 
 .btn-primary {
-    background-color: var(--btn-primary-bg);
+    background: linear-gradient(135deg, #1C1A17 0%, #3B3936 100%);
     color: var(--btn-primary-text);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .btn-primary:hover {
-    background-color: var(--btn-hover-bg);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #2D2B28 0%, #4D4B48 100%);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 0 0 4px rgba(28, 26, 23, 0.05);
+}
+
+.btn-primary:active {
+    transform: translateY(0) scale(0.98);
 }
 
 .btn-secondary {
     background-color: var(--btn-secondary-bg);
     color: var(--btn-secondary-text);
     border: 1px solid var(--border-color);
+    backdrop-filter: blur(4px);
 }
 
 .btn-secondary:hover {
     border-color: var(--text-color);
-    background-color: rgba(0, 0, 0, 0.03);
+    background-color: rgba(0, 0, 0, 0.04);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.02);
+}
+
+.btn-secondary:active {
+    transform: translateY(0) scale(0.98);
 }
 
 /* Hero Image Visualization */
