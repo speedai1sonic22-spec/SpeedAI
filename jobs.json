@@ -10,6 +10,11 @@
         "description": "Implement mechanistic interpretability and constitutional AI safeguards into our model pipeline."
     },
     {
+        "role": "Deep Learning Engineer",
+        "category": "Research",
+        "description": "Implement and optimize novel neural network architectures. Experience with Transformer models and LLMs is highly desired."
+    },
+    {
         "role": "Software Engineer",
         "category": "Engineering",
         "description": "Develop high-scale backend services and developer tools that power the SpeedAI ecosystem."
