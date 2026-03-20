@@ -10,6 +10,21 @@
         "description": "Implement mechanistic interpretability and constitutional AI safeguards into our model pipeline."
     },
     {
+        "role": "Software Engineer",
+        "category": "Engineering",
+        "description": "Develop high-scale backend services and developer tools that power the SpeedAI ecosystem."
+    },
+    {
+        "role": "Machine Learning Engineer",
+        "category": "Engineering",
+        "description": "Optimize and deploy large-scale models. Experience with PyTorch and distributed training is required."
+    },
+    {
+        "role": "Graphic Designer",
+        "category": "Design",
+        "description": "Create stunning visual assets, illustrations, and brand identities for SpeedAI product launches."
+    },
+    {
         "role": "Full Stack Engineer",
         "category": "Engineering",
         "description": "Build high-performance interfaces for Sonic 1.0. Experience with React and real-time streaming required."
