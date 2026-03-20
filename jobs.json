@@ -25,6 +25,11 @@
         "description": "Optimize and deploy large-scale models. Experience with PyTorch and distributed training is required."
     },
     {
+        "role": "IT Engineer",
+        "category": "Operations",
+        "description": "Manage and maintain company-wide hardware, software, and networking architecture to ensure a seamless researcher experience."
+    },
+    {
         "role": "Graphic Designer",
         "category": "Design",
         "description": "Create stunning visual assets, illustrations, and brand identities for SpeedAI product launches."
