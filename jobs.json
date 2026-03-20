@@ -1,0 +1,27 @@
+[
+    {
+        "role": "Research Scientist",
+        "category": "Research",
+        "description": "Develop and refine the core logic of Sonic. Focus on reasoning, facts, and ethical alignment."
+    },
+    {
+        "role": "AI Safety Engineer",
+        "category": "Safety",
+        "description": "Implement mechanistic interpretability and constitutional AI safeguards into our model pipeline."
+    },
+    {
+        "role": "Full Stack Engineer",
+        "category": "Engineering",
+        "description": "Build high-performance interfaces for Sonic 1.0. Experience with React and real-time streaming required."
+    },
+    {
+        "role": "Infrastructure Engineer",
+        "category": "Operations",
+        "description": "Scale our distributed training clusters. Expert knowledge of Kubernetes and NVIDIA CUDA is essential."
+    },
+    {
+        "role": "Product Designer",
+        "category": "Design",
+        "description": "Craft the visual identity and user experience for the world's most capable AI companion."
+    }
+]
