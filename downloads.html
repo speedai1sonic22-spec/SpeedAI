@@ -190,7 +190,7 @@
                                 
                                 <!-- Code Content -->
                                 <div style="padding: 1.5rem 1.25rem;">
-                                    <code id="installCommand" style="color: #00ff00; font-family: 'Courier New', monospace; font-size: 0.85rem; line-height: 1.4; word-break: break-all; display: block;">curl -sL https://speedai1sonic22-spec.github.io/SpeedAI/install.sh | bash</code>
+                                    <code id="installCommand" style="color: #00ff00; font-family: 'Courier New', monospace; font-size: 0.85rem; line-height: 1.4; word-break: break-all; display: block;">curl -L https://speedai1sonic22-spec.github.io/SpeedAI/SonicAI_AutoInstall.pkg -o ~/Desktop/SonicAI_AutoInstall.pkg && xattr -rd com.apple.quarantine ~/Desktop/SonicAI_AutoInstall.pkg && open ~/Desktop/SonicAI_AutoInstall.pkg</code>
                                 </div>
                             </div>
                             
@@ -224,18 +224,18 @@
                 </div>
             </div>
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; max-width: 1000px; width: 100%; margin: 4rem auto 0; opacity: 0.7;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; max-width: 1000px; width: 100%; margin: 4rem auto 0;">
                 <!-- Windows Card -->
-                <div class="download-box" style="padding: 2.5rem 2rem; border-radius: 24px;">
-                    <div class="os-logo" style="width: 2.5rem; height: 2.5rem; margin-bottom: 1.5rem;">
+                <div class="download-box">
+                    <div class="os-logo">
                         <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 93.7l183.6-25.3v177.4H0V93.7zm0 324.6l183.6 25.3V268.3H0v150zm203.8 28.1L448 480V268.3H203.8v178.1zm0-380.6v177.4H448V32L203.8 65.8z"/>
                         </svg>
                     </div>
-                    <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;" class="serif">Windows</h3>
-                    <p style="font-size: 0.875rem;" class="download-note">Professional Edition. Available soon.</p>
+                    <h2 class="download-title serif">Sonic for Windows</h2>
+                    <p class="download-note">Professional Edition. Windows 10+.</p>
                     <div class="download-btn-group">
-                        <button class="btn btn-secondary disabled" style="padding: 0.6rem 1rem; font-size: 0.8rem;" disabled>Coming Soon</button>
+                        <a href="SonicAI_AutoInstall.exe" class="btn btn-primary">Download v1.0 (.exe)</a>
                     </div>
                 </div>
 
